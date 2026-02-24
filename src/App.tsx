@@ -11,7 +11,7 @@ return (
 <h2>LAB-1</h2>
 <p>Ad Soyad: [Buğra ALGAN ]</p>
 <p>Ogrenci No: [230541094]</p>
-<p>Bolum : [Yazilim muhendisligi]</p>
+<p>Bolum : [Teknoloji Fakultesi/Yazilim muhendisligi]</p>
 <p>Sinif : [3.1]</p>
 <p>Not ortalamasi:[2.70]</p>
 </div>
