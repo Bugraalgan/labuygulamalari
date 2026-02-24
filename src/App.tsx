@@ -14,6 +14,7 @@ return (
 <p>Bolum : [Yazilim muhendisligi]</p>
 <p>Sinif : [3]</p>
 <p>Not ortalamasi:[2.70]</p>
+<p>deneme deneme deneme</p>
 </div>
 )
  }
