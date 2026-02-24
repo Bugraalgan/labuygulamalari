@@ -1,13 +1,404 @@
 <!doctype html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>web-lab-hello</title>
+    <title>Buğra Algan | Full Stack Developer</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: #f4f6f9;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      /* Skip Link */
+      .skip-link {
+        position: absolute;
+        top: -50px;
+        left: 10px;
+        background: black;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+
+      .skip-link:focus {
+        top: 10px;
+      }
+
+      /* Header */
+      header {
+        background: #1e1e2f;
+        color: white;
+        padding: 20px 0;
+      }
+
+      .header-container {
+        max-width: 1000px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav a:hover,
+      nav a:focus {
+        color: #00d4ff;
+      }
+
+      /* Main */
+      main {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 20px;
+      }
+
+      section {
+        margin-bottom: 70px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        margin-bottom: 20px;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+      }
+
+      /* Hakkımda */
+      .profile {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .profile img {
+        width: 200px;
+        border-radius: 10px;
+      }
+
+      .tech-list {
+        margin-top: 15px;
+        list-style: square;
+        padding-left: 20px;
+      }
+
+      /* Projeler */
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+      }
+
+      article {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      }
+
+      article img {
+        width: 100%;
+        border-radius: 8px;
+        margin-top: 10px;
+      }
+
+      /* Form */
+      fieldset {
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      legend {
+        font-weight: bold;
+        padding: 0 10px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      input,
+      select,
+      textarea {
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+      }
+
+      input:focus,
+      select:focus,
+      textarea:focus {
+        outline: 3px solid #00d4ff;
+      }
+
+      button {
+        padding: 10px 20px;
+        background: rgb(0, 0, 0);
+        border: none;
+        color: white;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      button:hover {
+        background: #0099cc;
+      }
+
+      .error-msg {
+        color: red;
+        font-size: 13px;
+        margin-top: 5px;
+      }
+
+      .success-msg {
+        margin-top: 15px;
+        color: green;
+        font-weight: bold;
+      }
+
+      input.error,
+      select.error,
+      textarea.error {
+        border: 2px solid red;
+      }
+
+      /* Footer */
+      footer {
+        background: #1e1e2f;
+        color: white;
+        padding: 30px 0;
+        text-align: center;
+      }
+
+      .social-links a {
+        color: #00d4ff;
+        margin: 0 10px;
+        text-decoration: none;
+      }
+
+      .social-links a:hover {
+        text-decoration: underline;
+      }
+
+      a:focus {
+        outline: 3px solid orange;
+      }
+    </style>
   </head>
+
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <a href="#main-content" class="skip-link">Ana içeriğe atla</a>
+
+    <header>
+      <div class="header-container">
+        <div class="logo">Buğra Algan</div>
+        <nav aria-label="Ana navigasyon">
+          <ul>
+            <li><a href="#hakkimda">Hakkımda</a></li>
+            <li><a href="#projeler">Projeler</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <h1>Full Stack Developer</h1>
+
+      <section id="hakkimda">
+        <h2>Hakkımda</h2>
+
+        <div class="profile">
+          <figure>
+            <img src="pp.png" alt="Buğra Algan profil fotoğrafı" />
+            <figcaption>Full Stack Developer adayı</figcaption>
+          </figure>
+
+          <div>
+            <p>
+              Modern web teknolojileri üzerine çalışan bir geliştiriciyim.
+              Backend ve frontend tarafında projeler geliştiriyorum.
+            </p>
+
+            <h3>Kullandığım Teknolojiler</h3>
+            <ul class="tech-list">
+              <li>HTML5 & CSS3</li>
+              <li>JavaScript</li>
+              <li>ASP.NET Core</li>
+              <li>SQL Server</li>
+              <li>REST API</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projeler">
+        <h2>Projelerim</h2>
+
+        <div class="projects">
+          <article>
+            <h3>E-Ticaret Sitesi</h3>
+            <p>
+              Ürün listeleme, sepet ve admin paneli içeren dinamik e-ticaret
+              projesi.
+            </p>
+            <p><strong>Teknolojiler:</strong> ASP.NET Core, SQL, Bootstrap</p>
+            <img src="image.png" alt="E-Ticaret sitesi ekran görüntüsü" />
+          </article>
+
+          <article>
+            <h3>Blog Yönetim Sistemi</h3>
+            <p>
+              Kategori bazlı içerik yönetimi sağlayan admin panelli blog
+              uygulaması.
+            </p>
+            <p>
+              <strong>Teknolojiler:</strong> ASP.NET Core MVC, Entity Framework
+            </p>
+            <img src="image.png" alt="Blog yönetim sistemi ekran görüntüsü" />
+          </article>
+        </div>
+      </section>
+
+      <section id="iletisim">
+        <h2>İletişim</h2>
+
+        <form id="contact-form" novalidate>
+          <fieldset>
+            <legend>İletişim Formu</legend>
+
+            <div class="form-group">
+              <label for="name">Ad Soyad:</label>
+              <input
+                type="text"
+                id="name"
+                required
+                minlength="2"
+                aria-describedby="name-error"
+              />
+              <small id="name-error" class="error-msg" role="alert"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-posta:</label>
+              <input
+                type="email"
+                id="email"
+                required
+                aria-describedby="email-error"
+              />
+              <small id="email-error" class="error-msg" role="alert"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Konu:</label>
+              <select id="subject" required aria-describedby="subject-error">
+                <option value="">-- Seçiniz --</option>
+                <option>İş Teklifi</option>
+                <option>Soru</option>
+                <option>Öneri</option>
+              </select>
+              <small id="subject-error" class="error-msg" role="alert"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mesajınız:</label>
+              <textarea
+                id="message"
+                rows="5"
+                required
+                minlength="10"
+                aria-describedby="message-error"
+              ></textarea>
+              <small id="message-error" class="error-msg" role="alert"></small>
+            </div>
+
+            <button type="submit">Gönder</button>
+            <p id="form-success" class="success-msg"></p>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Buğra Algan. Tüm hakları saklıdır.</p>
+      <div class="social-links">
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+        <a href="#">YouTube</a>
+      </div>
+    </footer>
+
+    <script>
+      const form = document.getElementById("contact-form");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        let isValid = true;
+        const fields = ["name", "email", "subject", "message"];
+
+        fields.forEach((id) => {
+          const input = document.getElementById(id);
+          const error = document.getElementById(id + "-error");
+          input.classList.remove("error");
+          error.textContent = "";
+
+          if (!input.checkValidity()) {
+            isValid = false;
+            input.classList.add("error");
+
+            if (input.validity.valueMissing) {
+              error.textContent = "Bu alan zorunludur.";
+            } else if (input.validity.tooShort) {
+              error.textContent = "Yeterli karakter giriniz.";
+            } else if (input.validity.typeMismatch) {
+              error.textContent = "Geçerli e-posta giriniz.";
+            }
+          }
+        });
+
+        if (isValid) {
+          document.getElementById("form-success").textContent =
+            "Form başarıyla gönderildi!";
+          form.reset();
+        }
+      });
+    </script>
   </body>
 </html>
